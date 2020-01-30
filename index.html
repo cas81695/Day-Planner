@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Day Planner</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css" />
+  
+
+    </head>
+
+         <header class="jumbotron">
+             <h1 class="display-1">Day Planner</h1>
+             <p class="lead">This application allows you to organize your work schedule for each hour every day</p>
+             <br>
+             <p id="currentDate" class="lead"></p>
+         </header>  
+
+    <body>
+
+                <div class="container">
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">9 AM</div>
+                        <textarea id="9" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">10 AM</div>
+                        <textarea id="10" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">11 AM</div>
+                        <textarea id="11" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">12 PM</div>
+                        <textarea id="12" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">1 PM</div>
+                        <textarea id="1" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">2 PM</div>
+                        <textarea id="2" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">3 PM</div>
+                        <textarea id="3" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">4 PM</div>
+                        <textarea id="4" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="row mx-auto">
+                        <div class="col-3-lg col-3-md col-3-sm hour time-block">5 PM</div>
+                        <textarea id="5" class="col-6-lg col-6-md col-6-sm input"></textarea>
+                        <button class="col-3-lg col-3-md col-3-sm saveButton"><i class="far fa-save"></i></button>
+                    </div>
+                </div>
+        
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="planner.js"></script>
+
+
+    </body>
+</html>
