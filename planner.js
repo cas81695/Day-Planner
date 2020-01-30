@@ -1,11 +1,14 @@
-const m = moment;
+const m = moment();
 
-var words;
-var hourInfo;
+var info;
+
+var hourText;
 
 $("#currentDate").text(m.format("dddd, MMMM Do"));
+console.log(m.format("dddd, MMMM Do"));
 
 $(document).ready(function() {
+
     selectHour ();
     inputText ();
 
@@ -13,15 +16,16 @@ $(document).ready(function() {
 
 function selectHour () {
 
-    var hourTime = moment().hour();
+    var currentTime = moment().hours();
 
     $(".input").each(function() {
         var hourTest = parseInt($(this).attr("id"));
-        if (hourTime > hourTest) {
+
+        if (currentTime > hourTest) {
             $(this).addClass("past");
             $(this).removeClass("future");
             $(this).removeClass("present");
-        } else if (hourTime < hourTest) {
+        } else if (currentTime < hourTest) {
             $(this).addClass("future");
             $(this).removeClass("present");
             $(this).removeClass("past");
@@ -34,9 +38,9 @@ function selectHour () {
     }
 
     $(".saveButton").click(function() {
-        words = $(this).sibilings(".input").val();
-        hourInfo = $(this).sibilings(".input").val();
-        localStorage.setItem(hourInfo, JSON.stringify(words));
+        info = $(this).sibilings(".input").val();
+        hourText = $(this).sibilings(".hour").text();
+        localStorage.setItem(hourText, JSON.stringify(info));
         
         selectHour ();
         inputText ();

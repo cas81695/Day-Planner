@@ -1,6 +1,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    background-color: grey;
 }
 
 textarea {
@@ -26,17 +27,14 @@ textarea {
 .hour {
     background-color: purple;
     color: white;
-    border-top: 1px dashed grey;
-    border-bottom: 1px dashed grey;
-    border-left: 1px dashed grey;
+
 }
 
 .saveButton {
     background-color: purple;
     color: white;
     border-bottom-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-left: 1px solid black;
+    border-left: 1px solid yellow;
 
 
 }
