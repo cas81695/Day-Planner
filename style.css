@@ -43,4 +43,20 @@ textarea {
     font-size: 150%;
 }
 
+.present {
+    background-color: white;
+    color: purple;
+}
+
+.past {
+    background-color: black;
+    color: white;
+}
+
+.future {
+    background-color: silver;
+    color: black;
+}
+
+
 
