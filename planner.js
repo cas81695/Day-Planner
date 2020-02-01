@@ -90,23 +90,23 @@ var hourText;
         $("#12").val(saveInput12);
 
         var saveInput1 = JSON.parse(localStorage.getItem("1 PM"));
-        $("#1").val("");
-        $("#1").val(saveInput1);
+        $("#13").val("");
+        $("#13").val(saveInput1);
 
         var saveInput2 = JSON.parse(localStorage.getItem("2 PM"));
-        $("#2").val("");
-        $("2").val(saveInput2);
+        $("#14").val("");
+        $("#14").val(saveInput2);
 
         var saveInput3 = JSON.parse(localStorage.getItem("3 PM"));
-        $("#3").val("");
-        $("#3").val(saveInput3);
+        $("#15").val("");
+        $("#15").val(saveInput3);
 
         var saveInput4 = JSON.parse(localStorage.getItem("4 PM"));
-        $("#4").val("");
-        $("#4").val(saveInput4);
+        $("#16").val("");
+        $("#16").val(saveInput4);
 
         var saveInput5 = JSON.parse(localStorage.getItem("5 PM"));
-        $("#5").val("");
-        $("#5").val(saveInput5);
+        $("#17").val("");
+        $("#17").val(saveInput5);
     }
 
