@@ -1,27 +1,27 @@
 const m = moment();
 
 $("#currentDate").text(m.format("dddd, MMMM Do"));
-console.log(m.format("dddd, MMMM Do"));
+
 
 $(document).ready(function() {
 
-    selectHour ();
+    hourColor ();
     inputText ();
 
 });
 
-function selectHour () {
+function hourColor () {
 
     var currentTime = moment().hours();
 
     $(".input").each(function() {
-        var hourTest = parseInt($(this).attr("id"));
+        var hourBlock = parseInt($(this).attr("id"));
 
-        if (currentTime > hourTest) {
+        if (currentTime > hourBlock) {
             $(this).addClass("past");
             $(this).removeClass("future");
             $(this).removeClass("present");
-        } else if (currentTime < hourTest) {
+        } else if (currentTime < hourBlock) {
             $(this).addClass("future");
             $(this).removeClass("present");
             $(this).removeClass("past");
@@ -39,11 +39,11 @@ var info;
 var hourText;
 
     $(".saveButton").click(function() {
-        info = $(this).sibilings(".input").val();
-        hourText = $(this).sibilings(".hour").text();
+        info = $(this).siblings(".input").val();
+        hourText = $(this).siblings(".hour").text();
         localStorage.setItem(hourText, JSON.stringify(info));
         
-        selectHour ();
+        hourColor ();
         inputText ();
     
     })
