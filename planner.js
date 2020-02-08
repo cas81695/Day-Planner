@@ -4,7 +4,7 @@ const m = moment();
 
 // This shortcut allows the current date variable in the index to be the result of the moment function
 
-$("#currentDate").text(m.format("dddd, MMMM Do"));
+$("#currentDate").text(m.format("dddd, MMMM Do, h:mm a"));
 
 // This shortcut sets the functions to activated in a set order
 
