@@ -13,3 +13,4 @@ When refreshing the page, the text will stay on the screen.
 
 The application is synced with the current date and time, once the day ends, the planner is made a new.
 
+link: https://cas81695.github.io/Day-Planner/
